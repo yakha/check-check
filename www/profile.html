@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/qrcode.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>check-check</title>
+    </head>
+    <body class="w-screen h-screen overflow-hidden">
+        <div class="app" data-role="content">
+          <!-- signup page -->
+          <div role="page" id="signup" class="w-full h-full bg-[#1e3a8a] flex flex-col justify-center items-center">
+            <h2 class="text-white font-medium uppercase mb-10 text-lg"> QR-CODE </h2>
+            <div class="ring ring-blue-600 bg-[#1e40af] p-2 text-white">
+              <div id="qrcode"></div>
+            </div>
+          </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script type="text/javascript">
+          new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+        </script>
+    </body>
+</html>
