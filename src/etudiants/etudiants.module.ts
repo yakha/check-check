@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { EtudiantsService } from './etudiants.service';
 import { EtudiantsController } from './etudiants.controller';
-import { EtudiantModel } from './dto/etudiant.model';
-import { SessionModel } from './dto/session.model';
+import { EtudiantModel } from './model/etudiant.model';
+import { SessionModel } from './model/session.model';
 
 @Module({
   controllers: [EtudiantsController],
